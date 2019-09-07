@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #e6e7f0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+input, button {
+    outline: 0;
+}
+
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+header#main-header{
+    height: 46px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+
+    position: relative;
+    z-index: 1;
+}
+
+header#main-header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+header#main-header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+header#main-header nav ul li{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #667580;
+    font-weight: bold;
+}
+
+header#main-header nav ul li + li {
+    margin-left: 30px;
+}
+
+header#main-header nav ul li img{
+    margin-right: 7px;
+}
+
+header#main-header div.side {
+    display: flex;
+    align-items: center;
+}
+
+header#main-header div.side img {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+
+    margin: 0 15px;
+}
+
+header#main-header div.side button {
+    height: 34px;
+    background: #3bb9e3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90px;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    color: #fff;
+    border: 0;
+    border-radius: 16px;
+}
+
+header#main-header div.side input {
+    width: 220px;
+    border: 1px solid #bebebe;
+    height: 34px;
+    padding: 0 30px 0 12px;
+    border-radius: 16px;
+
+    color: #667581;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    background: #e9e9e9 url("/images/search.svg") no-repeat 195px center;
+}
+
+div.banner {
+    height: 380px;
+    width: 100%;
+    background-color: #3bb9e3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    font-size: 2rem;
+}
+
+div.bar {
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+
+div.bar .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+
+    padding-left: 285px;
+}
+
+div.bar .content ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+
+div.bar .content ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    padding: 0 15px;
+
+    color: #667580;
+}
+
+div.bar .content ul li.active::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #3bb9e3;
+} 
+
+div.bar .content ul li span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+div.bar .content ul li strong{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+div.bar .content ul li.active strong {
+    color: #3bb9e3;
+}
+div.bar .content div.actions {
+    display: flex;
+}
+
+div.bar .content div.actions button {
+    height: 34px;
+    background-color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 90px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    
+    color: #3bb9e3;
+    border: 1px solid #3bb9e3;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+
+div.wrapper-content {
+    display: flex;
+}
+div.wrapper-content aside.profile {
+    width: 260px;
+}
+
+div.wrapper-content aside.profile img.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+
+    margin-top: -170px;
+}
+
+div.wrapper-content aside.profile h1 {
+    font-size: 2.1rem;
+    color: #1f2226;
+    margin-top: 10px;
+}
+
+div.wrapper-content aside.profile span{
+    font-size: 1.4rem;
+    color: #53626c;
+}
+
+div.wrapper-content aside.profile p{
+    font-size: 1.4rem;
+    color: #1f2226;
+    margin-top: 15px;
+}
+
+div.wrapper-content aside.profile ul.list{
+    margin-top: 20px;
+    list-style: none;
+    font-size: 1.4rem;
+    color: #657786;
+}
+
+div.wrapper-content aside.profile ul.list li{
+    display: flex;
+    align-items: center;
+}
+
+div.wrapper-content aside.profile ul.list li + li {
+    margin-top: 5px;
+}
+
+div.wrapper-content aside.profile ul.list li img{
+    margin-right: 5px;
+}
+
+div.wrapper-content aside.profile .widget{
+    margin-top: 20px;
+}
+
+div.wrapper-content aside.profile .widget strong{
+    font-weight: normal;
+    color: #3bb9e3;
+    font-size: 1.4rem;
+
+    display: flex;
+    align-items: center;
+}
+
+div.wrapper-content aside.profile .widget strong img{
+    margin-right: 10px;
+}
+
+div.wrapper-content aside.profile .followers ul{
+    list-style: none;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+div.wrapper-content aside.profile .followers ul li{
+    height: 45px;
+    width: 45px;
+    background-color: #D0D5D9;
+    border-radius: 50%;
+    flex: 1 0 auto;
+    margin: 0 5px 5px 0;
+}
+
+div.wrapper-content aside.profile .images ul{
+    list-style: none;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+div.wrapper-content aside.profile .images ul li{
+    height: 80px;
+    width: 80px;
+    background-color: #D0D5D9;
+    border-radius: 5px;
+    flex: 1 0 auto;
+    margin: 0 5px 5px 0;
+}
+
+div.wrapper-content .timeline {
+    flex: 1;
+    background-color: #fff;
+    margin: 10px 20px;
+    border-radius: 5px;
+}
+
+div.wrapper-content .timeline nav{
+    border-bottom: 1px solid #e6e7f0;
+
+    padding: 10px 15px;
+}
+
+div.wrapper-content .timeline nav a{
+    text-decoration: none;
+    color: #3bb9e3;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+div.wrapper-content .timeline nav a + a{
+    margin-left: 20px;
+}
+div.wrapper-content .timeline nav a.active {
+    color: #222;
+}
+
+div.wrapper-content .timeline ul.tweets{
+    list-style: none;
+}
+
+div.wrapper-content .timeline ul.tweets li {
+    border-bottom: 1px solid #e6e7f0;
+    padding: 10px 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+div.wrapper-content .timeline ul.tweets li > img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+div.wrapper-content .timeline ul.tweets li .info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong {
+    font-size: 1.4rem;
+    color: #1f2326;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong span {
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: #7b8b9a;
+}
+div.wrapper-content .timeline ul.tweets li .info p {
+    font-size: 1.4rem;
+    color: #1f2326;
+    margin-top: 5px;
+}
+div.wrapper-content .timeline ul.tweets li .actions {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+div.wrapper-content .timeline ul.tweets li .actions a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #667580;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+div.wrapper-content .timeline ul.tweets li .actions a + a {
+    margin-left: 30px;
+}
+div.wrapper-content .timeline ul.tweets li .actions img{
+    margin-right: 5px;
+}
+div.wrapper-content aside.widgets {
+    width: 290px;
+}
+
+div.wrapper-content aside.widgets .widget {
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+div.wrapper-content aside.widgets .widget .title {
+    display: flex;
+    align-items: baseline;
+}
+
+div.wrapper-content aside.widgets .widget .title strong{
+    font-size: 1.8rem;
+    color: #1f2226
+}
+
+div.wrapper-content aside.widgets .widget .title a{
+    font-size: 1.2rem;
+    color: #3bb9e3;
+    text-decoration: none;
+    position: relative;
+    padding-left: 10px;
+}
+
+div.wrapper-content aside.widgets .widget .title a::before{
+    content: '';
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+
+    background-color: #222;
+
+    position: absolute;
+    left: 0;
+    top: 50%
+}
+
+div.wrapper-content aside.widgets .follow ul{ 
+    list-style: none;
+}
+
+div.wrapper-content aside.widgets .follow ul li{ 
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccd6dd;
+    padding-bottom: 9px;
+    margin-top: 10px;
+}
+
+div.wrapper-content aside.widgets .follow ul li:last-child{
+
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+div.wrapper-content aside.widgets .follow ul li .profile{
+    display: flex;
+    align-items: center;
+}
+
+
+div.wrapper-content aside.widgets .follow ul li .profile img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+div.wrapper-content aside.widgets .follow ul li .profile .info{
+    display: flex;
+    flex-direction: column;
+}
+div.wrapper-content aside.widgets .follow ul li .profile .info strong{ 
+    font-size: 1.4rem;
+    color: #1f2326;
+    margin-bottom: 5px;
+}
+
+div.wrapper-content aside.widgets .follow ul li .profile .info strong span{ 
+    font-weight: normal;
+    color: #9a9a9a;
+}
+
+div.wrapper-content aside.widgets .follow ul li .profile .info button{ 
+    height: 28px;
+    background-color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 90px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    
+    color: #3bb9e3;
+    border: 1px solid #3bb9e3;
+    border-radius: 16px;
+}
+
+div.wrapper-content aside.widgets .follow ul li a{ 
+    color: #ccd6dd;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
